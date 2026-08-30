@@ -1,0 +1,10 @@
+{
+    "skip": {
+        "condition": "is '.s'",
+        "write": "m!skip"
+    },
+    "play": {
+        "condition": "start '.p'",
+        "write": "m!play [sub(3,)]"
+    }
+}
