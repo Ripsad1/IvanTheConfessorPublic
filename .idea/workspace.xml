@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c006fb2-9023-4e04-a070-cbfcf8f1d069" name="Changes" comment="viel zeug" />
+    <list default="true" id="3c006fb2-9023-4e04-a070-cbfcf8f1d069" name="Changes" comment="so eine scheiße" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -140,7 +140,15 @@
       <option name="project" value="LOCAL" />
       <updated>1788119119757</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="so eine scheiße">
+      <option name="closed" value="true" />
+      <created>1788120131217</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1788120131217</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +156,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="viel zeug" />
-    <option name="LAST_COMMIT_MESSAGE" value="viel zeug" />
+    <MESSAGE value="so eine scheiße" />
+    <option name="LAST_COMMIT_MESSAGE" value="so eine scheiße" />
   </component>
 </project>
