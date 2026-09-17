@@ -20,9 +20,7 @@ class Moderation(commands.Cog):
             return
 
         COMMANDS_FILE = "helper/commands.json"
-        MUSIC_HELPER_FILE = "helper/music_helper.json"
         commands_dict = load_dict(COMMANDS_FILE)
-        music_dict = load_dict(MUSIC_HELPER_FILE)
         content = msg.content.lower()
         possible_messages = []
 

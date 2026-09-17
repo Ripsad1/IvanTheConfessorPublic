@@ -1,3 +1,4 @@
+import discord
 import random
 from discord.ext import commands
 
@@ -11,17 +12,24 @@ class RandomTask(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.Cog.listener()
-    async def on_message(self, msg):
-        if msg.author.bot:
-            return
-
-        if msg.content.strip().lower() == "random daily":
-            name = random.choice(list(COMPETITIONS))
-            data = COMPETITIONS[name]
-            year = random.choice(data["years"])
-            number = random.randint(1, data["problems"])
-            await msg.channel.send(f"{name}-{year}-{number}")
+    @discord.slash_command(
+        name = "random_daily",
+        description = "chooses a random IMC or IMO problem"
+    )
+    async def random_daily(self,
+                           ctx:discord.ApplicationContext,
+                           competition:discord.Option(
+                               str,
+                               "choose a competition",
+                               choices=["IMO","IMC","random"]
+                           )
+                           ):
+        if competition == "random":
+            competition = random.choice(["IMO", "IMC"])
+        data = COMPETITIONS[competition]
+        year = random.choice(data["years"])
+        number = random.randint(1,data["problems"])
+        await ctx.respond(f"{competition}-{year}-{number}")
 
 
 def setup(bot):

@@ -41,22 +41,21 @@ class WoerterMitEndungen(commands.Cog):
         save_dict(WOERTER_FILE, woerter_dict)
 
     # Listen anzeigen
-    @commands.Cog.listener("on_message")
-    async def zeige_liste(self, msg):
-
-        if msg.author.bot:
-            return
-
+    @discord.slash_command(
+        name="list",
+        description="shows all saved german words ending in 'Endung'"
+    )
+    async def list(self,
+                   ctx:discord.ApplicationContext,
+                   endung=discord.Option(
+                       str,
+                       "choose Endung",
+                       choices=["al", "ast", "ut", "est", "icht", "ang"]
+                   )
+                   ):
         WOERTER_FILE = "woerter_mit_endungen.json"
         woerter_dict = load_dict(WOERTER_FILE)
-
-        if msg.content.startswith("list "):
-            teile = msg.content.split(maxsplit=1)
-            endung = "-" + teile[1].strip().lstrip("-").lower() if len(teile) > 1 else "-"
-            await msg.channel.send(embed=create_list_endung(endung))
-
-
-
+        await ctx.respond(embed=create_list_endung("-"+endung))
 
 
 def setup(bot):

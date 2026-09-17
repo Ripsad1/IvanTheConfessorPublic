@@ -14,17 +14,32 @@ class Handbook(commands.Cog):
             color=discord.Color.purple()
         )
         embed.add_field(
-            name="help",
+            name="/handbook",
             value="shows this handbook",
             inline=False)
         embed.add_field(
-            name="random daily",
+            name="/random_daily",
             value="chooses a random IMC or IMO problem",
             inline=False,
         )
         embed.add_field(
-            name="list [Endung]",
-            value="shows all saved german words ending in 'al'",
+            name="/list [Endung]",
+            value="shows all saved german words ending in 'Endung'",
+            inline=False
+        )
+        embed.add_field(
+            name="/madeline",
+            value="sends a Madeline sticker chosen by the user",
+            inline=False
+        )
+        embed.add_field(
+            name="/badeline",
+            value="sends a Badeline sticker chosen by the user",
+            inline=False
+        )
+        embed.add_field(
+            name="/celeste_quotes",
+            value="sends a quote from celeste, the best game ever made, chosen by the user",
             inline=False
         )
         return embed

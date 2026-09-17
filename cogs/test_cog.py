@@ -8,7 +8,7 @@ class Test(commands.Cog):
 
     # Slash command mit Auswahl
     @discord.slash_command(
-        name = "test",
+        name = "test", # Der Name darf kein Leerzeichen haben
         description = "test"
     )
     async def test(self,

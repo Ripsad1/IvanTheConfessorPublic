@@ -8,19 +8,19 @@
     "-al": {
         "condition": "end 'al' | end 'ahl'",
         "write": "[random//Genial//Laal//national//international//universal//Kanal//intraversal//embryonal//Schal//Schakal//Ral//Gral//schmal//kahl//Pfahl//Sahl//Stahl//minimal//maximal//natural//extremal//fatal//banal//total//radial//Tal//Wal//Wahl//phänomenal//medial//legal//illegal//telemedial//egal//regal//fäkal//akzidental//fahl//sozial//asozial//mineral//Mal//Aal//bestial//anal//basal//territorial//positional//Tertial//inertial//terminal//radikal//Pokal//neuronal//Skandal//marginal//Portal//brutal//Moral//kolossal//lokal//liberal//nominal//pauschal//bronchial//oval//vertikal//horizontal//tangential//modal//Vokal//rational//irrational//transzendental//vital//nasal//oral//vaginal//frontal//Zahl//Rinnsal//binomial//monomial//nochmal//animal//labial//laminal//Senegal//Nepal//Prinzipal//Opal//global//Differential//Integral//Exponential//trivial//Potential//real//surreal//infinitesimal//verbal//Lineal//diametral//antipodal//Sisal//lingual//regional//saisonal//Urinal//Bacchanal//Qual//Fraktal//normal//binormal//orthogonal//diagonal//funktional//trigonal//zentral//Pedal//Choral//kausal//kardinal//ordinal//monumental//original//Wuppertal//palatal//partial//Quartal//glottal//feudal//föderal//formal//informal//lateral//halal//Saal//Dahl//rektal//zentripetal//zentrifugal//koaxial//digital//Spital//L’Hospital//Hospital//proportional//Karneval//dental//Ideal//multinomial//Strahl//Marl//postal//schal//patriarchal//vasal//astral//Ponal//tonal//atonal//orthonormal//bilabial//linguolabial//bilingual//monolingual//trilingual//multilingual//boreal//sakral//sentimental//sedimental//emotional//mental//epizentral//areal//transversal//latitudinal//longitudinal//Karl//Carl//HAL//paternal//maternal//material//matriarchal//Ural//Portugal//Pascal//synodal//dimensional//Aral//arterial//Muttermal//Mahl//mal//Mahnmal//nonverbal//rustikal//mondial//Edelstahl//grippal//punktual//dual//Dual//Paukal//Plural//evangelikal//Arsenal//Semivokal//spiral//kontinental//Scheusal//fundamel//fiskal//Diebstahl//faktual//personal//auktorial//Personal//neutral//hexagonal//dezimal//hexadezimal//äquatorial//Kapital//simplizial//temporal//adverbial//konditional//final//postmortal//unimodal//cotangential//Stendal//viral//giral//chiral//kanibal//monoidial//lateral//bilateral//literal//trilateral//augenzahl//quadratzahl//kubikzahl//Potential//intentional//Schicksal//Trübsal//Mühsal//suboptimal//optimal//Jal//Genital//spezial//Nachtigal//lateral//Futteral]",
-        "times_triggered": 117,
+        "times_triggered": 121,
         "spam_prevent": 0
     },
     "Das Spiel": {
         "condition": "in 'spiel'",
         "write": "ich hab ans Spiel gedacht (Schnips)",
-        "times_triggered": 5,
+        "times_triggered": 7,
         "spam_prevent": 1
     },
     "Amöbe": {
         "condition": "in 'amöbe'",
         "write": "Und die sehen ungefähr so aus: https://static.spektrum.de/fm/912/f2000x857/Naegleria-fowleri_GettyImages-Vis900190_VisualsUnlimited-DTJohn-TBCole_q.jpg",
-        "times_triggered": 1,
+        "times_triggered": 2,
         "spam_prevent": 1
     },
     "Schlafmangel": {

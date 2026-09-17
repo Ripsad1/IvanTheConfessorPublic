@@ -18,5 +18,6 @@ bot.load_extension("cogs.woerter_mit_endungen_tracker_cog")
 bot.load_extension("cogs.music_helper_cog")
 bot.load_extension("cogs.wordle_cog")
 bot.load_extension("cogs.test_cog")
+bot.load_extension("cogs.celeste_stickers_cog")
 
 bot.run(BOT_TOKEN)
