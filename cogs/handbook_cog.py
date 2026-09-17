@@ -10,32 +10,35 @@ class Handbook(commands.Cog):
     def build_embed(self):
         embed = discord.Embed(
             title="Handbook",
-            description="Der bot featured folgende commands:",
+            description="This bot features the following commands:",
             color=discord.Color.purple()
         )
         embed.add_field(
             name="help",
-            value="zeigt dieses Handbook",
+            value="shows this handbook",
             inline=False)
         embed.add_field(
             name="random daily",
-            value="wählt eine zufällige Aufgabe aus IMC und IMO",
+            value="chooses a random IMC or IMO problem",
             inline=False,
         )
         embed.add_field(
             name="list [Endung]",
-            value="zeigt die gespeicherten Wörter mir der entsprechenden Endunge an",
+            value="shows all saved german words ending in 'al'",
             inline=False
         )
         return embed
 
-    @commands.Cog.listener()
-    async def on_message(self, msg):
-        if msg.author.bot:
+    @discord.slash_command(
+        name = "handbook",
+        description = "Shows handbook"
+    )
+    async def handbook(self,ctx):
+        if ctx.author.bot:
             return
+        await ctx.respond(embed=self.build_embed())
 
-        if msg.content.lower() == "help":
-            await msg.channel.send(embed=self.build_embed())
+
 
 
 def setup(bot):
