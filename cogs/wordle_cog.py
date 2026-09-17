@@ -1,4 +1,7 @@
 from discord.ext import commands
+import sqlite3
+
+wordle_data = sqlite3.connect("helper/wordle.db")
 
 class Wordle(commands.Cog):
     WORDLE_CHANNEL_ID = 1544329108828196884
